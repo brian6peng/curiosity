@@ -23,7 +23,7 @@ namespace Curiosity
                 // the XOAUTH2 authentication mechanism.
                 client.AuthenticationMechanisms.Remove("XOAUTH2");
 
-                client.Authenticate("jiangsu_ir", "pw_jiangsu_ir");
+                client.Authenticate("dfdfd", "fdfdf");
 
                 int count = client.GetMessageCount();
                 "Main".Log().Info("fdfdfd");
