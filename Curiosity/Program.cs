@@ -1,17 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MailKit;
 using MailKit.Net.Pop3;
 using MimeKit;
+using ZXing;
+using ZXing.Common;
 
 namespace Curiosity
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            //ReciveEmail();
+
+            string contents = Console.ReadLine();
+            contents = "https://www.be4u.cn/Mission";
+            var barcodeWriter = new BarcodeWriter
+            {
+                Format = BarcodeFormat.QR_CODE,
+                Options = new EncodingOptions
+                {
+                    Height = 300,
+                    Width = 300
+                }
+            };
+            Bitmap bitmap = barcodeWriter.Write(contents);
+            bitmap.Save("d:\\code\\qr.png", ImageFormat.Png);
+        }
+
+        private static void ReciveEmail()
         {
             LoggingExtensions.Logging.Log.InitializeWith<LoggingExtensions.log4net.Log4NetLog>();
 
