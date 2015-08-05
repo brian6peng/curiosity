@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfExtraction", "PdfExtract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisTest", "RedisTest\RedisTest.csproj", "{2135D891-3BC6-45FC-AA92-C2221DC3B93D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrmliteTest", "OrmliteTest\OrmliteTest.csproj", "{A4393574-0C61-4F58-BB6D-CDBE946D2973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationTest", "AuthenticationTest\AuthenticationTest.csproj", "{A2184D4C-04DB-4779-BC47-923D39C38A4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{2135D891-3BC6-45FC-AA92-C2221DC3B93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2135D891-3BC6-45FC-AA92-C2221DC3B93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2135D891-3BC6-45FC-AA92-C2221DC3B93D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4393574-0C61-4F58-BB6D-CDBE946D2973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4393574-0C61-4F58-BB6D-CDBE946D2973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4393574-0C61-4F58-BB6D-CDBE946D2973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4393574-0C61-4F58-BB6D-CDBE946D2973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2184D4C-04DB-4779-BC47-923D39C38A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2184D4C-04DB-4779-BC47-923D39C38A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2184D4C-04DB-4779-BC47-923D39C38A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2184D4C-04DB-4779-BC47-923D39C38A4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
