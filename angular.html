@@ -5,9 +5,11 @@
 
 <p>尝试修改以下表单。</p>
 
-<div ng-app="myApp" ng-controller="myCtrl">
+<form  ng-app="myApp"  ng-controller="myCtrl"
+name="myForm" novalidate>
 
-名: <input type="text" ng-model="firstName"><br>
+名: <input type="text" name="name" ng-model="firstName" required> 
+	<span style="color:red" ng-show="myForm.name.$dirty&& myForm.name.$invalid">*</span><br>
 姓: <input type="text" ng-model="lastName"><br>
 <br>
 姓名: {{firstName + " " + lastName|lowercase  }}<br>
@@ -18,14 +20,14 @@
 		score:{{i|currency }}
 	</li>
 </ul>
-</div>
+</form>
 
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
     $scope.firstName= "John";
     $scope.lastName= "Dode";
-	$scope.price= 5;
+	$scope.price= 1;
 	$scope.list=[15,2,8,6,10,14];
 });
 </script>
